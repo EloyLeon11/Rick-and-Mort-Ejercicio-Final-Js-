@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+}
+
+.titulo {
+    margin-top: 0.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color:rgb(0, 0, 0)
+    
+}
+
+.listaCartas {
+    width: 100%;
+    background-color: rgb(32, 35, 41);
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+}
+
+.carta {
+    width: 730px;
+    height: 250px;
+    margin: auto;
+    margin-top: 1em;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 700px) {
+    .carta {
+        width: 330px;
+        height: 450px;
+        margin: auto;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.divIMG {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divText {
+    width: 100%;
+    background-color: #3c3e44;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4em;
+    align-items: center;
+}
+
+.name {
+    color: rgb(158, 158, 158);
+    padding: 0.3em;
+    margin-bottom: 0.1em;
+    margin-top: 0.7em;
+}
+
+.nameCard {
+    color: white;
+    margin-bottom: 0.8em;
+}
+
+.species {
+    color: rgb(158, 158, 158);
+    padding: 0.4em;
+    
+}
+
+.speciesCard {
+    color: white;
+}
